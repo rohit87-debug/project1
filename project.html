@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .container{
+            background-color:white;
+            padding: 30px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba( 0,0,0,0.1);
+           text-align:center;
+           width: 300px;
+           align-items: ;
+
+            }
+            h2{
+                color: #333;
+                margin-bottom:20px;
+            }
+        #result{
+         margin-top:20px;
+         font-size:18px;
+         background-color: blue;
+         color: aliceblue;
+         font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Percentage Calculator</h1>
+        <input type="number" id="marks" placeholder="enter total marks obtained">
+        <input type="number" id="subjects" placeholder="enter number of subjects"><br>
+        <button class="btn">Calculate</button>
+        <div id="resut"></div>
+    </div>
+    <script>
+        const marks=document.getElementById('marks')
+        const subjects=document.getElementById('subjects')
+        const btn=document.getElementsByClassName('btn')[0]
+        const result=document.getElementById('result')
+
+        btn.addEventListener('click',function(e){
+            e.preventDefault()
+            const marksValue=marks.value
+            const subjectsValue=subjects.value
+            const resultValue=marksValue/subjectsValue
+            // console.log(marksValue,subjectsValue)
+            // console(resultValue)
+            result.innerHTML=resultValue
+        })
+        
+        
+    </script>
+</body>
+</html>

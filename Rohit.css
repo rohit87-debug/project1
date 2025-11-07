@@ -1,0 +1,35 @@
+.tab{
+    background-color: rgb(36, 219, 219);
+}
+.A{
+    border-style:ridge;
+    border-width: 01mm;
+}
+.B{
+    color: white;
+    background-color: orange;
+}
+.C{
+    color: white;
+    background-color: dodgerblue;
+}
+.D{
+    color: white;
+    background-color: mediumseagreen;
+}
+.E{
+    color: white;
+    background-color: gray;
+}
+.F{
+    color: white;
+    background-color: slateblue;
+}
+.G{
+    color: white;
+    background-color: violet;
+}
+.H{
+    color: white;
+    background-color: aqua;
+}
