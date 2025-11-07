@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .calculator {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+      text-align: center;
+    }
+    button {
+      background-color: #291969;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #5a3de0;
+    }
+    #result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="calculator">
+    <h2>Percentage Calculator</h2>
+
+    <input type="number" id="marks" placeholder="Enter total marks obtained">
+    <input type="number" id="subjects" placeholder="Enter number of subjects">
+    <button onclick="calculatePercentage()">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calculatePercentage() {
+      let totalMarks = document.getElementById("marks").value;
+      let subjects = document.getElementById("subjects").value;
+
+      if (totalMarks <= 0 || subjects <= 0) {
+        document.getElementById("result").innerHTML = "Please enter valid values.";
+        return;
+      }
+
+      let percentage = totalMarks / (subjects * 100) * 100;
+      document.getElementById("result").innerHTML = "Your Percentage: " + percentage.toFixed(2) + "%";
+    }
+  </script>
+
+</body>
+</html>
