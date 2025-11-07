@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: blue;
+            color:white;
+            padding-bottom: 10px;
+            border-radius: 10px;
+            background-image: linear-gradient(to right,rgb(0, 255, 217),rgb(0, 128, 87));
+        }
+        .container2{
+            background-color:whitesmoke;
+            color:black;
+        }
+
+        .heading{
+            text-align:center;
+            background-color:
+        }
+        .container3{
+            background-color: black;
+            text-align: center;
+            color: azure;
+            height:50px;
+            padding-top:1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 class="heading"><br>My Semantic Web Page<h6>Using modern HTML5 structure</h6></h1>
+        </div>
+    </div>
+     <div class="container2">
+        <div class="heading">
+            <a href="./my.html">Home</a>
+            <a href="./#">About</a>
+            <a href="./pag.html">Services</a>
+            <a href="./#">Contact</a>
+        </div>
+    </div>
+    <h1>Navigation</h1>
+    <p>This section provides quick links and important navigation options throughout the website.</p>
+    <ul style="color: #9e1bb3;">
+        <li>Home </li>
+        <li>Our Team</li>
+        <li>Projects</li>
+        <li>Support</li>
+    </ul><br><br>
+    <h1>About Us</h1>
+    <p>We are a team of web developers passionate about creating clean, accessible,and semantic web experiences. Our goal is to make the web simpler and more user-friendly for everyone.</p>
+    <button class="btn">click me</button>
+    <div class="container3">
+       <footer>
+        <P>&copy; 2025 My Website|All Rights Reserved</P>
+     </footer>
+    </div>
+    <!-- <script>
+    const heading= document.getElementsByClassName("heading")
+    console.log(heading[0].innerHTML)
+</script>  -->
+<script>
+    const btn= document.getElementsByClassName("btn")[0]
+    btn.addEventListener('click',function(){
+        console.log("bhai click ho gaya")
+    })
+</script>
+</body>
+</html>
